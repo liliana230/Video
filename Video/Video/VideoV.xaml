@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Video.VideoV">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="video" WidthRequest="100" HeightRequest="100"></Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="camara" BackgroundColor="Black" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.ColumnSpan="3"/>
+                <Button x:Name="btnGvideo" ImageSource="grabar" Text="Grabar Video" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1" 
+                        BackgroundColor="#EA3D3D" FontAttributes="Bold" Margin="2" Clicked="btnGvideo_Clicked"></Button>
+                <Button x:Name="btnguardar" ImageSource="guardar" Text="Guardar" Clicked="btnguardar_Clicked" HorizontalOptions="FillAndExpand" 
+                        Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" BackgroundColor="#EA3D3D" FontAttributes="Bold"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

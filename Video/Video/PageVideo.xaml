@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Video.PageVideo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="video" Margin="40"
+                   HeightRequest="300"
+                   WidthRequest="420"
+                   HorizontalOptions="CenterAndExpand"
+                   Aspect="Fill"/>
+            <Button x:Name="agvideo" Text="Crear Video Nuevo" FontAttributes="Bold" FontSize="18" Margin="75,10,75,10" BackgroundColor="#EC5252" Clicked="agvideo_Clicked"></Button>
+            <Button x:Name="Vervideo" Text="VER VIDEOS" Clicked="Vervideo_Clicked"  FontAttributes="Bold" FontSize="18" Margin="75,10,75,10" BackgroundColor="#EC5252"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

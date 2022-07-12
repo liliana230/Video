@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Video.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#F74742" Padding="7" CornerRadius="0" BorderColor="#EC3732">
+            <Label Text="Aplicacion de Grabación" TextColor="Black" HorizontalTextAlignment="Center"  FontSize="30"/>
+        </Frame>
+        <Image Source="video"  Aspect="Fill" WidthRequest="150" HeightRequest="350" Margin="0,45,0,0"></Image>
+        <Button x:Name="grabar" BackgroundColor="#EC3732" VerticalOptions="EndAndExpand" BorderColor="#FE0800" BorderWidth="2" FontSize="20" 
+               Margin="30,0,30,50" ImageSource="grabar" Text="Ingresar para Grabar Video" TextColor="Black" Clicked="grabar_Clicked" Image="aud.png"></Button>
+
+    </StackLayout>
+
+</ContentPage>
